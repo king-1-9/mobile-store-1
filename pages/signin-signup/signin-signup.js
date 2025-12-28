@@ -17,8 +17,8 @@ function register(theForm) {
             .then(e => {
                 var cube = document.querySelector('.mydiv');
                 cube.classList.toggle('styler');
-                document.querySelector('.login input[type=email]').value = "";
-                document.querySelector('.login input[type=password]').value = "";
+                document.querySelector('.login input[type=email]').value = "abod";
+                document.querySelector('.login input[type=password]').value = "1234";
                 document.querySelector('#cnf-password').value = "";
                 localStorage.setItem('user', JSON.stringify(e.user))
                 db.child(`users/${e.user.uid}`)
